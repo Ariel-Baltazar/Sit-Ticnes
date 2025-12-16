@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    background: url(azul\ ft.webp) no-repeat center / cover;
+    padding: 50px 5%;
+}
+.cont{
+    position: relative;
+    height: 100%;
+    background:rgba(176, 20, 179, 0.1);
+    border:-1px solid #f411f4;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 20px #f411f4;
+    transform: scale(0);
+    animation: zoom-in 2s ease forwards;
+}
+@keyframes zoom-in{
+    100%{
+        transform: scale(1);
+    }
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.L1{
+    font-size: 30px;
+    color:chartreuse;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 20px;
+    color:chartreuse;
+    text-decoration: none;
+    font-weight:300;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.navbar a:hover,
+.navbar a.ative{
+    border-color: #fff;
+
+}
+.principal{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #fff;
+
+}
+.principal-detalhe h1{
+font-size: 55px;
+line-height: 1;
+}
+.principal-detalhe h2{
+font-size: 30px;
+color: chartreuse;
+
+}
+#n{
+    padding:1rem;
+    color:chartreuse;
+}
+.principal-detalhe p{
+margin: 10px 0 20px;
+}
+.principal-detalhe .icon{
+    display: flex;
+    align-items:center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background:#fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #fff;
+     text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+    gap: 0.3rem;
+}
+.d{
+    padding: 10px 30px;
+    background-color: chartreuse;
+    border: 2px solid chartreuse;
+    border-radius: 30px;
+    box-shadow: 0 0 15px chartreuse;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+    margin-left: 15px;
+
+    
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+.d:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+.principal-img .img-box{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: -1px solid #f411f4;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #f411f4;
+    overflow: hidden;
+}
+.principal-img .img-box img{
+    position: absolute;
+    width:100%;
+    display: block;
+
+
+}
+
+
